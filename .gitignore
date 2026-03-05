@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.pytest_cache/
+.venv/
+venv/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (do not commit raw FAERS)
+data/raw/
+
+# Local outputs (keep the curated ones under outputs/)
+outputs/tmp/

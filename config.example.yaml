@@ -1,0 +1,26 @@
+# Example configuration for running the pipeline locally
+faers:
+  drug_path: data/raw/DRUG.csv
+  demo_path: data/raw/DEMOGRAPHIC.csv
+  reac_path: data/raw/REACTION.csv
+
+# Define the exposure drugs by generic name keywords
+exposures:
+  nivolumab_keywords: ["nivolumab"]
+  ipilimumab_keywords: ["ipilimumab"]
+
+# Outcome definition
+outcomes:
+  # Option A: myocarditis-only
+  myocarditis_pts: ["MYOCARDITIS"]
+  # Option B: composite severe cardiotoxicity (provide your MedDRA PT list)
+  composite_pts_path: outputs/tables/TableS_PT_List.csv
+
+analysis:
+  dedup_key: "primaryid"     # or "caseid" depending on your files
+  year_column: "year"        # if your DEMO has year; otherwise inferred from FDA_DT
+  bootstrap_n: 2000
+  random_seed: 42
+
+outputs:
+  out_dir: outputs/tmp

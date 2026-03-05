@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+title: "FAERS Dual ICI Cardiotoxicity Signal Pipeline"
+message: "If you use this repository, please cite the accompanying manuscript in the manuscript/ folder (manuscript in preparation)."
+type: software
+authors:
+  - family-names: "İşleyen"
+    given-names: "Hasan Burak"

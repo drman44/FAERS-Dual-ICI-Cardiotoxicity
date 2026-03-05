@@ -1,0 +1,7 @@
+# Minimal requirements for running the local pipeline scaffold
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+statsmodels>=0.14
+matplotlib>=3.7
+pyyaml>=6.0
